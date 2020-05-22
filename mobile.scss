@@ -1,0 +1,170 @@
+@media(max-width:1000px){
+    /*---イントロパーツ---*/
+        .intro-wrapper{
+            .container{
+            .intro-photo-text{
+                flex-direction: column;
+                p{
+                    width:90%;
+                    padding:20px 0 0;
+                    order: 2;
+                    margin: 0 auto ;
+                }
+                .intro-image{
+                    order: 1;
+                    margin: 0 auto;
+                }
+            }
+        }
+        }
+    /*---メニューパーツ---*/
+    .menu-wrapper{
+        .container{
+            .menu{
+                flex-direction: column;
+                .menu-image{
+                    order: 1;
+                    margin: 0 auto;
+                }
+                p{
+                    width:90%;
+                    padding:20px 0 0;
+                    order: 2;
+                    margin: 0 auto ;
+                }
+            }
+        }
+    }
+    .access-wrapper{
+        .container{
+            .map{
+                .description{
+                    width: 70%;
+                    text-align: left;
+                    font-size: 19px;
+                color: white;
+                line-height: 31px;
+                }
+                .map-address{
+                    width: 90%;
+                    flex-direction: column;
+                    padding-top: 30px;
+                    margin: 0 auto;
+                    .google-map{
+                        width: 100%;
+                    order: 1;
+                    margin: 0 auto;
+
+                    }
+                    .address{
+                        width: 100%;
+                        font-size: 13px;
+                        order: 2;
+                        margin: 0 auto;
+                        padding: 10px 0 0;
+                        line-height:30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:670px){
+/*---ヘッダーパーツ--*/
+header{
+    .container{
+        justify-content: space-between;
+        .left{
+            .logo{
+                width: 70px;
+            }
+        }
+        .right{
+            p{
+                font-size: 10px
+            }
+            .br-none{
+                display: none;
+            }
+        }
+    }
+}
+/*---リンクパーツ--*/
+.link{
+    .link-container{
+        a{
+            font-size: 10px;
+            line-height: 20px;
+            letter-spacing: 1px;
+        }
+    }
+}
+/*---イントロパーツ---*/
+.intro-wrapper{
+    .container{
+    .intro-photo-text{
+        p{
+            font-size: 14px;
+        }
+        .intro-image{
+            width: 80%;
+        }
+    }
+}
+}
+/*---メニューパーツ---*/
+.menu-wrapper{
+    .container{
+        .menu{
+            flex-direction: column;
+
+            p{
+                font-size: 14px;
+            }
+
+            .menu-image{
+                order: 1;
+                margin: 0 auto;
+                width:80%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.access-wrapper{
+    .container{
+        .map{
+            .description{
+                width: 90%;
+            
+                font-size: 14px;
+                
+            }
+            .map-address{
+                .google-map{
+                width: 100%;
+                }
+                .address{      
+                    padding: 10px 0 0;
+                }
+            }
+        }
+    }
+}
+}
+
+
+

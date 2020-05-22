@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mobile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;600;700;900&display=swap" rel="stylesheet">    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+
+        $(function(){
+  $('a[href^="#"]').click(function(){
+    var speed = 500;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
+});
+    </script>
+
+
+</head>
+<body>
+
+<!---ヘッダーパーツ-->
+    <header>
+        <div class="container">
+            <div class="left">
+                <img class="logo" src="header-logo.png" alt="">
+            </div>
+            <div class="right">
+                <p>
+                    Nyitvatartás: 13 - 22 óráig.<br class="br-none">
+                    Hétfő szünnap.<br>
+                    Kérjük érdeklődjön telefonon!<br class="br-none">
+                    Telefon: 061 250-8256
+                </p>
+            </div>
+        </div>
+    </header>
+
+<!---リンクパーツ-->
+    <div class="link">
+        <div class="link-container">
+            <a class="" href="#hom">- Home -</a>
+            <a class="" href="#menu">- Menu -</a>
+            <a class="" href="#drink">- Itallap -</a>
+            <a class="" href="#access">- Belépés -</a>
+        </div>
+    </div>
+
+<!---イントロパーツ-->
+    <div id="home" class="intro-wrapper">
+        <div class="container">
+            <h1>Sachi Okuyama mesterszakács</h1>
+            <div class="intro-photo-text">
+                <p>Az étterem vezetője és mester szakácsa, pályafutását Tokióban kezdte.
+                    Később, meghívást kapott Bécsbe, ahol 5 évet foglalkozott a sushi készítés művészetével.<br>
+                    Szakértelme és hozzáértésének elismeréseképpen, a Hilton szállodába invitálták.
+                    2001 tavaszán saját éttermet nyitott, amit 2004-ben méltán Budapest 50 legjobb étterme közé választottak.<br>
+                    Okuyama San egy kis szigeten született, így már gyerekkora óta jól ismeri a halakat, lehetősége nyílt a különböző halfajtákat közelről tanulmányoznia.<br>
+                    A halakat a repülővel hozatja külföldről, feldolgozásukat Ő maga végzi.
+                </p>
+                <div class="intro-image">
+                    <img src="intro-wrapper-image.jpg" alt="写真">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!---メニューパーツ-->
+    <div id="menu" class="menu-wrapper">
+        <div class="container">
+            <h1>- Menu -</h1>
+            <div class="menu">
+                <div class="menu-image box1x1">
+                    <div class="slider">
+                        <img src="menu/menu-img (1).jpg" width="" height="" alt="">
+                        <img src="menu/menu-img (2).jpg" width="" height="" alt="">
+                        <img src="menu/menu-img (3).jpg" width="" height="" alt="">
+                        <img src="menu/menu-img (4).jpg" width="" height="" alt="">
+                        <img src="menu/menu-img (5).JPG" width="" height="" alt="">
+                        <img src="menu/menu-img (6).jpg" width="" height="" alt="">
+                        <img src="menu/menu-img (7).jpg" width="" height="" alt="">
+                        <img src="menu/menu-img (8).jpg" width="" height="" alt="">
+                        <img src="menu/menu-img (9).jpg" width="" height="" alt="">
+                        <img src="menu/menu-img (10).jpg" width="" height="" alt="">
+                        <img src="menu/menu-img (11).jpg" width="" height="" alt="">
+                    </div>
+                </div>
+                <p>
+                    különféle ételeket kínálunk, de sushi az ajánlás.
+                    A sushi kifejezés azokra az ételekre vonatkozik, amelyek különféle ecettel ízesített rizst használnak, és amelyeket nyers hal és zöldség kísér.<br>
+                    Az nigiri-zushi, kézzel készített rizshalmok, különféle alapanyagok tetejével mosott wasabival.<br>
+                    A maki-zushi a sushi tekercs japán elnevezése. A nori (szárított tengeri moszat) lapját sushi rizzsel, valamint egy sor hal- és zöldségréteggel rétegezzük. A lapot ezután szorosan hengerelik egy makisu-val. <br>Ezután a tekercset darabokat, lemezelve és tálalva. <br>
+                    <a href="menu/menu-img (1).pdf"> A másik menü itt van</a></p>
+            </div>
+
+        </div>
+    </div>
+
+<!---飲み物パーツ-->
+<div id="drink" class="menu-wrapper">
+    <div class="container">
+        <h1>- Ittalap -</h1>
+        <div class="menu">
+            <div class="menu-image box1x1">
+                <div class="slider">
+                    <img src="ittalap/ittalap-img (1).jpg" width="" height="" alt="">
+                    <img src="ittalap/ittalap-img (2).jpg" width="" height="" alt="">
+                    <img src="ittalap/ittalap-img (3).jpg" width="" height="" alt="">
+                    <img src="ittalap/ittalap-img (4).jpg" width="" height="" alt="">
+                    <img src="ittalap/ittalap-img (5).jpg" width="" height="" alt="">
+                    <img src="ittalap/ittalap-img (6).jpg" width="" height="" alt="">
+                </div>
+            </div>
+            <p>
+                különféle ételeket kínálunk, de sushi az ajánlás.
+                A sushi kifejezés azokra az ételekre vonatkozik, amelyek különféle ecettel ízesített rizst használnak, és amelyeket nyers hal és zöldség kísér.<br>
+                Az nigiri-zushi, kézzel készített rizshalmok, különféle alapanyagok tetejével mosott wasabival.<br>
+                A maki-zushi a sushi tekercs japán elnevezése. A nori (szárított tengeri moszat) lapját sushi rizzsel, valamint egy sor hal- és zöldségréteggel rétegezzük. A lapot ezután szorosan hengerelik egy makisu-val. <br>Ezután a tekercset darabokat, lemezelve és tálalva. <br>
+                <a href="ittalap/ittalap-img (1).pdf"> A másik menü itt van</a></p>
+        </div>
+
+    </div>
+</div>
+
+<!---店舗案内パーツ-->
+<div id="access" class="access-wrapper">
+    <div class="container">
+        <h1>- Belépés -</h1>
+        <div class="map">
+            <p class="description">Óbuda csendes környezetében, a Kolosy üzletház alagsorában az Okuyama no Sushi étterem várja kedves vendégeit változatosabbnál-
+                változatosabb japán ételekkel, italokkal.
+                Az étterem, 20-25 fő befogadására képes, lehetőség van étel elvitelre is, személyes megrendelés útján.<br>
+                Továbbá rendelkezésre áll kijelölt dohányzó rész, az azt igénylők számára.
+            </p>
+            <div class="map-address">
+                <div class="google-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3177.4780005632288!2d19.036496259574132!3d47.52756976822087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741d95661f3578d%3A0xbd7bec116d30993!2sBudapest%2C%20Kolosy%20t%C3%A9r%205%2C%201036!5e0!3m2!1sen!2shu!4v1586678010163!5m2!1sen!2shu" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="address">
+                    <p>
+                            Cím: 1036 Budapest, Kolosy tér 5-6. Kolosy üzletház<br>
+                            Telefonszám/fax: 06 1 250-8256<br>
+                            Nyitvatartás: 13.00-22.00 kivéve Hétfő<br>
+                            E-mail: okuyamanosushi@altavizsla.hu<br>
+                            Megközelítés: 6-os, 60-as, 86-os autóbusszal, a 17-es villamossal, Hévvel<br>
+                    </p>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---フッターパーツ-->
+<footer>
+    <div class="red-line"><p>Copyright Okuyama no sushi 2020</p></div>
+    <div class="footer-logo">
+    <img class="logo" src="header-logo.png" alt="">
+    </div>
+</footer>
+</body>
+
+</html>
